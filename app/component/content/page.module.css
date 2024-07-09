@@ -1,0 +1,33 @@
+.contentCont {
+    margin: 0 clamp(16px, 10vw, 144px);
+}
+
+.headingsCont {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap:24px;
+    margin-bottom: 72px;
+}
+
+.popular {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:24px;
+    margin-bottom: 64px;
+}
+
+@media all and (max-width:1025px){
+    .contentCont {
+        margin: 0 clamp(16px, 5vw, 100px);
+    }
+
+    .headingsCont {
+        display: block;
+        margin-bottom: 72px;
+    }
+
+    .popular {
+        display: block;
+    }
+}
+

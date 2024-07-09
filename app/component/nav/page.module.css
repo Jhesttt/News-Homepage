@@ -1,0 +1,132 @@
+.navCont {
+    padding: 44px clamp(16px, 10vw, 144px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listCont {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.listCont li:not(:last-child) {
+    margin-left: 40px;
+}
+
+.listCont li a {
+    text-decoration: none;
+    color: hsl(240, 100%, 5%);
+    transition: 0.15s;
+}
+
+.listCont li a:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.menu {
+    display: none;
+    cursor: pointer;
+}
+
+.hideSide{
+    display: none;
+}
+
+
+@media all and (max-width:1025px){
+    .logo {
+        height: 28px;
+        width: auto;
+    }
+
+    .navCont {
+        padding: 44px clamp(16px, 5vw, 100px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media all and (max-width:620px){
+    .hideTop {
+        display: none;
+    }
+
+    .menu {
+        display: block; 
+        transition: 0.15s;
+    }
+
+    .close {
+        cursor: pointer;
+        transition: 0.15s;
+    }
+
+    .menu:hover, .close:hover {
+        opacity: 0.5;
+    }
+
+
+    .sideNav {
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 98%);
+        top:0;
+        bottom:0;
+        right: 0;
+        position: fixed;
+        list-style-type: none;
+        padding: 24px 0;
+        width: 250px;
+        z-index: 999;
+    }
+
+    .hideSide {
+        display: none;
+    }
+
+    .sideNav li {
+        padding: 12px 24px;
+        transition: 0.15s;
+        background-color: hsl(0, 0%, 98%);
+        cursor: pointer;
+    }
+
+    .sideNav li:not(:first-child):hover {
+        background-color: hsl(0, 0%, 90%);
+    }
+
+    .sideNav li:first-child{
+        text-align: right;
+        cursor:default;
+    }
+
+    .sideNav li a{
+        text-decoration: none;
+        color: hsl(240, 100%, 5%);
+    }
+
+    .overlay {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: hsla(0, 0%, 0%, 0.7);
+        position: fixed;
+    }
+
+
+}
+
+@media all and (max-width:426px){
+    .navCont {
+        padding: 24px clamp(16px, 5vw, 100px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+

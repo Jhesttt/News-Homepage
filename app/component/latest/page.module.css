@@ -1,0 +1,9 @@
+.container {
+    background: hsl(240, 100%, 5%);
+    padding: 24px;
+}
+
+.title {
+    color: hsl(35, 77%, 62%);
+    font-size: 36px;
+}

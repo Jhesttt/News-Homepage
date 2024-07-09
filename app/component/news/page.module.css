@@ -1,0 +1,24 @@
+.container {
+    padding: 24px 0;
+    border-bottom: solid 1px hsl(236, 13%, 42%);
+}
+
+.container:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;   
+}
+
+.title {
+    color: hsl(36, 100%, 99%);
+    font-size: 22px;
+    margin-bottom: 10px;
+    /* white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%; */
+}
+
+.description {
+    color: hsl(233, 8%, 79%);   
+    line-height: 28px; 
+}
